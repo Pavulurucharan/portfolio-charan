@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alignment Error Test</title>
+<style>
+  /* Reset some default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Create a simple grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Sample content with different alignment */
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="grid-item">
+      <h2>Item 1</h2>
+      <p>This is some sample text.</p>
+    </div>
+    <div class="grid-item align-left">
+      <h2>Item 2 (Left)</h2>
+      <p>This is some sample text with left alignment.</p>
+    </div>
+    <div class="grid-item align-center">
+      <h2>Item 3 (Center)</h2>
+      <p>This is some sample text with center alignment.</p>
+    </div>
+    <div class="grid-item align-right">
+      <h2>Item 4 (Right)</h2>
+      <p>This is some sample text with right alignment.</p>
+    </div>
+  </div>
+</body>
+</html>
